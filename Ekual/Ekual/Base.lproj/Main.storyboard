@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ekual" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ul9-s5-r6X">
+                                <frame key="frameInset" width="419" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATK-Ro-dZF">
+                                <frame key="frameInset" minX="10" minY="161" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b18-FU-bhk">
+                                        <frame key="frameInset" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="5Tg-po-uO1"/>
+                                            <constraint firstAttribute="height" constant="70" id="iV7-NO-inR"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="one"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9o-cS-f9V">
+                                        <frame key="frameInset" minX="70" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="X3A-X3-OTO"/>
+                                            <constraint firstAttribute="height" constant="70" id="pIp-Uu-2Hp"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="two"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLA-IG-aFE">
+                                        <frame key="frameInset" minX="140" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Dlu-UL-8JA"/>
+                                            <constraint firstAttribute="height" constant="70" id="psr-5I-I5m"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="three"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cv-2T-6sa">
+                                        <frame key="frameInset" minX="210" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="oHl-2M-o8e"/>
+                                            <constraint firstAttribute="height" constant="70" id="wtu-wm-xfE"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="plus"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RWX-vP-Oxl">
+                                <frame key="frameInset" minX="10" minY="239" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvj-0u-UGG">
+                                        <frame key="frameInset" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="63O-Fu-XoG"/>
+                                            <constraint firstAttribute="width" constant="70" id="Kim-b8-iHZ"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="four"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE7-8K-vKn">
+                                        <frame key="frameInset" minX="70" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="6vG-8b-kCx"/>
+                                            <constraint firstAttribute="width" constant="70" id="ENK-m7-xyW"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="five"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tid-aA-H0I">
+                                        <frame key="frameInset" minX="140" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="NGo-QD-SaX"/>
+                                            <constraint firstAttribute="width" constant="70" id="WWb-A2-aHx"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="six"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdo-Oj-cDO">
+                                        <frame key="frameInset" minX="210" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Gvg-jb-25E"/>
+                                            <constraint firstAttribute="height" constant="70" id="qPr-jY-vu1"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="minus"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eM-DH-QPl">
+                                <frame key="frameInset" minX="10" minY="317" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P7-l2-EtA">
+                                        <frame key="frameInset" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="EzD-yl-P68"/>
+                                            <constraint firstAttribute="height" constant="70" id="GUm-g1-kZx"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="seven"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzO-40-Axs">
+                                        <frame key="frameInset" minX="70" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="JyX-Sw-hMa"/>
+                                            <constraint firstAttribute="height" constant="70" id="iEg-Uc-JGb"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="eight"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twy-3a-ryY">
+                                        <frame key="frameInset" minX="140" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Pt4-aa-c0h"/>
+                                            <constraint firstAttribute="height" constant="70" id="lj9-Ne-fsU"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="nine"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E28-gC-SP2">
+                                        <frame key="frameInset" minX="210" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="6xc-we-Uii"/>
+                                            <constraint firstAttribute="width" constant="70" id="ycd-jB-iz0"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="multiply"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Sj-th-gBY">
+                                <frame key="frameInset" minX="10" minY="395" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3f-yt-adS">
+                                        <frame key="frameInset" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="YbL-R2-7Xe"/>
+                                            <constraint firstAttribute="width" constant="70" id="meW-Tb-Ox9"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="zero"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reY-cD-b8b">
+                                        <frame key="frameInset" minX="70" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="wk8-dg-tlE"/>
+                                            <constraint firstAttribute="width" constant="70" id="xAB-UN-E3G"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="clear"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bW-2Z-laT">
+                                        <frame key="frameInset" minX="140" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="CAm-Dw-bs4"/>
+                                            <constraint firstAttribute="width" constant="70" id="fIs-cJ-3Sq"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="equal"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAs-h8-OHc">
+                                        <frame key="frameInset" minX="210" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="ggU-gW-pwY"/>
+                                            <constraint firstAttribute="width" constant="70" id="p3C-VV-Kg8"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="divide"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-W4-xdM">
+                                <frame key="frameInset" minX="10" minY="58" width="304" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3JE-nq-51l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.875" y="35.91549295774648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg2.png" width="1080" height="1920"/>
+        <image name="clear" width="132" height="132"/>
+        <image name="divide" width="132" height="132"/>
+        <image name="eight" width="132" height="132"/>
+        <image name="equal" width="132" height="132"/>
+        <image name="five" width="132" height="132"/>
+        <image name="four" width="132" height="132"/>
+        <image name="minus" width="132" height="132"/>
+        <image name="multiply" width="132" height="132"/>
+        <image name="nine" width="132" height="132"/>
+        <image name="one" width="132" height="132"/>
+        <image name="plus" width="132" height="132"/>
+        <image name="seven" width="132" height="132"/>
+        <image name="six" width="132" height="132"/>
+        <image name="three" width="132" height="132"/>
+        <image name="two" width="132" height="132"/>
+        <image name="zero" width="132" height="132"/>
+    </resources>
+</document>
