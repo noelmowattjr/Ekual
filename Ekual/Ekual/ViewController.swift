@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     var currOperation: Operator = Operator.nothing //--Stores current operator
     var calcState: CalculationState = CalculationState.enteringNum //--Var for tracking Calculation state
     
+    //--Will hold the very first value that we will be calculated against the sec value on screen
+    var firstValue: String = ""
+    
     //--Display Label for results
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -27,30 +30,7 @@ class ViewController: UIViewController {
     //--Numbers
     @IBAction func NumberClicked(_ sender: UIButton) {
         
-        switch sender.tag {
-        case 0:
-            print("0 button pressed")
-        case 1:
-            print("1 button pressed")
-        case 2:
-            print("2 button pressed")
-        case 3:
-            print("3 button pressed")
-        case 4:
-            print("4 button pressed")
-        case 5:
-            print("5 button pressed")
-        case 6:
-            print("6 button pressed")
-        case 7:
-            print("7 button pressed")
-        case 8:
-            print("8 button pressed")
-        case 9:
-            print("9 butt pressed")
-        default:
-            return
-        }
+        
     }
     
     //--Operators
