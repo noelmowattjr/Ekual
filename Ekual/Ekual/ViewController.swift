@@ -10,7 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //--Display Label
+    //-------------Current Operations & States------------------//
+    var currOperation: Operator = Operator.nothing //--Stores current operator
+    var calcState: CalculationState = CalculationState.enteringNum //--Var for tracking Calculation state
+    
+    //--Display Label for results
     @IBOutlet weak var displayLabel: UILabel!
     
     override func viewDidLoad() {
