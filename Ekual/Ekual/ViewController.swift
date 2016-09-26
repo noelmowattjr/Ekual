@@ -26,24 +26,51 @@ class ViewController: UIViewController {
     }
 
     //---------------BUTTON ACTIONS---------------//
-    
     //--Numbers
     @IBAction func NumberClicked(_ sender: UIButton) {
-        
-        
+        updateDisplay(number: String(sender.tag))   //--call updateDisplay func and pass it my tag args
     }
+    
+    //--UPDATE display when click a number--//
+    func updateDisplay(number: String){
+        if calcState == CalculationState.newNumStarted { //--If we start a new number
+            if let num = displayLabel.text {    //--If we can get something out of displayLabel
+                if num != "" {  //--if user enters something then we have something to store in firstValue
+                    displayLabel.text = ""  //--CLEARS Label when number is clicked
+                    firstValue = num
+                }
+            }
+            calcState = CalculationState.enteringNum
+            displayLabel.text = number
+        }
+        else if calcState == CalculationState.enteringNum{
+            displayLabel.text = displayLabel.text! + number
+        }
+    }
+    //--------------------------------------//
     
     //--Operators
     @IBAction func OperatorClicked(_ sender: UIButton){
+        
+        calcState = CalculationState.newNumStarted  //--start new nimber when operator is clicked
+        
+        if let num = displayLabel.text{
+            if num != "" {
+                firstValue = num
+                displayLabel.text = ""
+            }
+        }
+        
+        //----Calculation Operators-----//
         switch sender.tag {
         case 10:
-            print("+ button pressed")
+            currOperation = Operator.add
         case 11:
-            print("- button pressed")
+            currOperation = Operator.subtract
         case 12:
-            print("x button pressed")
+            currOperation = Operator.times
         case 13:
-            print("/ button pressed")
+            currOperation = Operator.division
         default:
             return
         }
@@ -51,22 +78,36 @@ class ViewController: UIViewController {
     
     //--Equals
     @IBAction func EqualsClicked(_ sender: UIButton) {
-        switch sender.tag {
-        case 14:
-            print("= button pressed")
-        default:
-            return
+        
+       calculationBrain()  //--Call the
+    }
+    
+    //--The brains of the EQUAL button--//
+    func calculationBrain () {
+        if firstValue.isEmpty {     //--user enters nada then
+            return                  //--nothing happens
         }
+        
+        var results = ""    //--results holder
+        
+        //--Let's calculate--//
+        if currOperation == Operator.add {
+            results = "\(Int(firstValue)! + Int(displayLabel.text!)!)"
+        } else if currOperation == Operator.subtract {
+            results = "\(Int(firstValue)! - Int(displayLabel.text!)!)"
+        } else if currOperation == Operator.times {
+            results = "\(Int(firstValue)! * Int(displayLabel.text!)!)"
+        } else if currOperation == Operator.division {
+            results = "\(Int(firstValue)! / Int(displayLabel.text!)!)"
+        }
+        
+        displayLabel.text = results //--Assign results of calculation to displayLabel
+        calcState = CalculationState.newNumStarted  //--change calc state to new num started
     }
     
     //--Clear
     @IBAction func ClearClicked(_ sender: UIButton) {
-        switch sender.tag {
-        case 15:
-            print("clear button pressed")
-        default:
-            return
-        }
+        displayLabel.text = "0"  //--CLEARS Label
     }
     
     override func didReceiveMemoryWarning() {
