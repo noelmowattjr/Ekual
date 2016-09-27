@@ -20,23 +20,24 @@ class ViewController: UIViewController {
     //--Display Label for results
     @IBOutlet weak var displayLabel: UILabel!
     
+    //----Initial Setup-----//
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
+    
     //---------------BUTTON ACTIONS---------------//
     //--Numbers
     @IBAction func NumberClicked(_ sender: UIButton) {
         updateDisplay(number: String(sender.tag))   //--call updateDisplay func and pass it my tag args
     }
     
-    //--UPDATE display when click a number--//
+    //--UPDATE display when a number is clicked--//
     func updateDisplay(number: String){
         if calcState == CalculationState.newNumStarted { //--If we start a new number
             if let num = displayLabel.text {    //--If we can get something out of displayLabel
-                if num != "" {  //--if user enters something then we have something to store in firstValue
-                    displayLabel.text = ""  //--CLEARS Label when number is clicked
+                if num != "" {  //--if user enters something, we have something to store in firstValue
+                    firstValue = "" //--THIS--//
                     firstValue = num
                 }
             }
@@ -78,8 +79,7 @@ class ViewController: UIViewController {
     
     //--Equals
     @IBAction func EqualsClicked(_ sender: UIButton) {
-        
-       calculationBrain()  //--Call the
+       calculationBrain()  //--Call the brain
     }
     
     //--The brains of the EQUAL button--//
