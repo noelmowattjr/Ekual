@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     //----Initial Setup-----//
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        displayLabel.text = "0"
     }
     
     //---------------BUTTON ACTIONS---------------//
@@ -37,8 +37,8 @@ class ViewController: UIViewController {
         if calcState == CalculationState.newNumStarted { //--If we start a new number
             if let num = displayLabel.text {    //--If we can get something out of displayLabel
                 if num != "" {  //--if user enters something, we have something to store in firstValue
-                    firstValue = "" //--THIS--//
                     firstValue = num
+                    print("This is firstValue" + firstValue)
                 }
             }
             calcState = CalculationState.enteringNum
