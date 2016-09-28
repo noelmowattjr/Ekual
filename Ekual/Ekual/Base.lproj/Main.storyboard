@@ -225,7 +225,23 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clearBUTT" destination="reY-cD-b8b" id="hKj-ZN-AV7"/>
                         <outlet property="displayLabel" destination="4nA-W4-xdM" id="ki1-7u-bpc"/>
+                        <outlet property="divideBUTT" destination="sAs-h8-OHc" id="N88-9R-9Lw"/>
+                        <outlet property="eightBUTT" destination="vzO-40-Axs" id="owF-5K-oxN"/>
+                        <outlet property="equalBUTT" destination="6bW-2Z-laT" id="TIk-gR-enp"/>
+                        <outlet property="fiveBUTT" destination="SE7-8K-vKn" id="w4i-dM-gkS"/>
+                        <outlet property="fourBUTT" destination="pvj-0u-UGG" id="Fp8-7V-8ht"/>
+                        <outlet property="minusBUTT" destination="Zdo-Oj-cDO" id="a0O-fq-GaA"/>
+                        <outlet property="nineBUTT" destination="twy-3a-ryY" id="Ebm-9Z-LC2"/>
+                        <outlet property="oneBUT" destination="b18-FU-bhk" id="gkH-X7-o7Z"/>
+                        <outlet property="plusBUTT" destination="1cv-2T-6sa" id="E21-Mv-RAw"/>
+                        <outlet property="sevenBUTT" destination="6P7-l2-EtA" id="FhK-An-yZ9"/>
+                        <outlet property="sixBUTT" destination="Tid-aA-H0I" id="qbQ-Tw-kZV"/>
+                        <outlet property="threeBUTT" destination="WLA-IG-aFE" id="GfE-ZT-IhE"/>
+                        <outlet property="timesBUTT" destination="E28-gC-SP2" id="h01-qK-oMg"/>
+                        <outlet property="twoBUTT" destination="o9o-cS-f9V" id="zX1-dk-paF"/>
+                        <outlet property="zeroBUTT" destination="h3f-yt-adS" id="ySO-85-qcW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ekual/ViewController.swift"
-            timestampString = "496674004.045263"
+            timestampString = "496787515.074539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "calculationBrain()"
             landmarkType = "7">
          </BreakpointContent>
