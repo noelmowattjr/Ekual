@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     //----Initial Setup-----//
     override func viewDidLoad() {
         super.viewDidLoad()
-        //displayLabel.text = "0" //--THIS
+        displayLabel.text = "0" //--THIS
     }
     
     //---------------BUTTON ACTIONS---------------//
@@ -53,6 +53,29 @@ class ViewController: UIViewController {
     @IBAction func NumberClicked(_ sender: UIButton) {
         
         updateDisplay(number: String(sender.tag))   //--call updateDisplay func and pass it my tag args
+        
+        //--Animating my number buttons
+        if sender.tag == 1 {
+            AnimateThis(b: oneBUT)
+        } else if sender.tag == 2 {
+            AnimateThis(b: twoBUTT)
+        } else if sender.tag == 3 {
+            AnimateThis(b: threeBUTT)
+        } else if sender.tag == 4 {
+            AnimateThis(b: fourBUTT)
+        } else if sender.tag == 5 {
+            AnimateThis(b: fiveBUTT)
+        } else if sender.tag == 6 {
+            AnimateThis(b: sixBUTT)
+        } else if sender.tag == 7 {
+            AnimateThis(b: sevenBUTT)
+        } else if sender.tag == 8 {
+            AnimateThis(b: eightBUTT)
+        } else if sender.tag == 9 {
+            AnimateThis(b: nineBUTT)
+        } else if sender.tag == 0 {
+            AnimateThis(b: zeroBUTT)
+        }
     }
     
     //--UPDATE display when a number is clicked--//
@@ -89,80 +112,16 @@ class ViewController: UIViewController {
         switch sender.tag {
         case 10:
             currOperation = Operator.add
-            
-            //-----Animate Clear Button------------//
-            UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                
-                //--Equal button increase
-                self.plusBUTT.bounds.size.width += 5
-                
-                }, completion: { finished in
-                    
-                    UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
-                        
-                        //--Equal button decrease
-                        self.plusBUTT.bounds.size.width -= 5
-                        
-                        }, completion: nil)
-            })
-
+            AnimateThis(b: plusBUTT)
         case 11:
             currOperation = Operator.subtract
-            
-            //-----Animate Clear Button------------//
-            UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                
-                //--Equal button increase
-                self.minusBUTT.bounds.size.width += 5
-                
-                }, completion: { finished in
-                    
-                    UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
-                        
-                        //--Equal button decrease
-                        self.minusBUTT.bounds.size.width -= 5
-                        
-                        }, completion: nil)
-            })
-            
+            AnimateThis(b: minusBUTT)
         case 12:
             currOperation = Operator.times
-            
-            //-----Animate Clear Button------------//
-            UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                
-                //--Equal button increase
-                self.timesBUTT.bounds.size.width += 5
-                
-                }, completion: { finished in
-                    
-                    UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
-                        
-                        //--Equal button decrease
-                        self.timesBUTT.bounds.size.width -= 5
-                        
-                        }, completion: nil)
-            })
-            
+            AnimateThis(b: timesBUTT)
         case 13:
             currOperation = Operator.division
-            
-            //-----Animate Clear Button------------//
-            UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                
-                //--Equal button increase
-                self.divideBUTT.bounds.size.width += 5
-                
-                }, completion: { finished in
-                    
-                    UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
-                        
-                        //--Equal button decrease
-                        self.divideBUTT.bounds.size.width -= 5
-                        
-                        }, completion: nil)
-            })
-            
+            AnimateThis(b: divideBUTT)
         default:
             return
         }
@@ -172,7 +131,9 @@ class ViewController: UIViewController {
     @IBAction func EqualsClicked(_ sender: UIButton) {
        calculationBrain()  //--Call the brain
         
-        AnimateThis()
+        //--Animate
+        AnimateThis(b: equalBUTT)
+
     }
     
     //--The brains of the EQUAL button--//
@@ -200,39 +161,28 @@ class ViewController: UIViewController {
     
     //--Clear
     @IBAction func ClearClicked(_ sender: UIButton) {
-        displayLabel.text = ""  //--CLEARS Label
+        displayLabel.text = "0"  //--CLEARS Label
         
-        //-----Animate Clear Button------------//
-        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-            
-            //--Equal button increase
-            self.clearBUTT.bounds.size.width += 5
-            
-            }, completion: { finished in
-                
-                UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
-                    
-                    //--Equal button decrease
-                    self.clearBUTT.bounds.size.width -= 5
-                    
-                    }, completion: nil)
-        })
+        //--Animate
+        AnimateThis(b: clearBUTT)
     }
     
-    //------Animation Functon-----------//
-    func AnimateThis(){
+    //------ANIMATION FUNCTION-----------//
+    func AnimateThis(b: UIButton){
         
-        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             
             //--Equal button increase
-            self.equalBUTT.bounds.size.width += 5
+            b.bounds.size.width += 10
+            b.bounds.size.height += 10
             
             }, completion: { finished in
                 
                 UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
                     
                     //--Equal button decrease
-                    self.equalBUTT.bounds.size.width -= 5
+                    b.bounds.size.width -= 10
+                    b.bounds.size.height -= 10
                     
                 }, completion: nil)
         })
