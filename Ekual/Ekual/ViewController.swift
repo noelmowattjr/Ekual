@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //--var heartBeatSoundEffect = AVAudioPlayer()
 
     //-------------Current Operations & States------------------//
     var currOperation: Operator = Operator.nothing //--Stores current operator
@@ -45,7 +47,6 @@ class ViewController: UIViewController {
     //----Initial Setup-----//
     override func viewDidLoad() {
         super.viewDidLoad()
-        //--displayLabel.text = "$" //--THIS
     }
     
     //---------------BUTTON ACTIONS---------------//
@@ -133,7 +134,6 @@ class ViewController: UIViewController {
         
         //--Animate
         AnimateThis(b: equalBUTT)
-
     }
     
     //--The brains of the EQUAL button--//
@@ -146,12 +146,16 @@ class ViewController: UIViewController {
         
         //--Let's calculate--//
         if currOperation == Operator.add {
+            if let num = displayLabel.text{if num == "" {return}}
             results = "\(Double(firstValue)! + Double(displayLabel.text!)!)"
         } else if currOperation == Operator.subtract {
+            if let num = displayLabel.text{if num == "" {return}}
             results = "\(Double(firstValue)! - Double(displayLabel.text!)!)"
         } else if currOperation == Operator.times {
+            if let num = displayLabel.text{if num == "" {return}}
             results = "\(Double(firstValue)! * Double(displayLabel.text!)!)"
         } else if currOperation == Operator.division {
+            if let num = displayLabel.text{if num == "" {return}}
             results = "\(Double(firstValue)! / Double(displayLabel.text!)!)"
         }
         
@@ -169,7 +173,7 @@ class ViewController: UIViewController {
     
     //------ANIMATION FUNCTION-----------//
     func AnimateThis(b: UIButton){
-        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             
             //--Equal button increase
             b.bounds.size.width += 12
@@ -177,7 +181,7 @@ class ViewController: UIViewController {
             
             }, completion: { finished in
                 
-                UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
+                UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveEaseOut, animations: {
                     
                     //--Equal button decrease
                     b.bounds.size.width -= 12
@@ -189,22 +193,7 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        AnimateThis(b: clearBUTT)
-        AnimateThis(b: equalBUTT)
-        AnimateThis(b: plusBUTT)
-        AnimateThis(b: minusBUTT)
-        AnimateThis(b: timesBUTT)
-        AnimateThis(b: divideBUTT)
-        AnimateThis(b: oneBUT)
-        AnimateThis(b: twoBUTT)
-        AnimateThis(b: threeBUTT)
-        AnimateThis(b: fourBUTT)
-        AnimateThis(b: fiveBUTT)
-        AnimateThis(b: sixBUTT)
-        AnimateThis(b: sevenBUTT)
-        AnimateThis(b: eightBUTT)
-        AnimateThis(b: nineBUTT)
-        AnimateThis(b: zeroBUTT)
+        
     }
 
 
