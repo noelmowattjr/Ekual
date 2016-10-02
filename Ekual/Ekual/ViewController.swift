@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     //----Initial Setup-----//
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayLabel.text = "0" //--THIS
+        //--displayLabel.text = "$" //--THIS
     }
     
     //---------------BUTTON ACTIONS---------------//
@@ -146,13 +146,13 @@ class ViewController: UIViewController {
         
         //--Let's calculate--//
         if currOperation == Operator.add {
-            results = "\(Int(firstValue)! + Int(displayLabel.text!)!)"
+            results = "\(Double(firstValue)! + Double(displayLabel.text!)!)"
         } else if currOperation == Operator.subtract {
-            results = "\(Int(firstValue)! - Int(displayLabel.text!)!)"
+            results = "\(Double(firstValue)! - Double(displayLabel.text!)!)"
         } else if currOperation == Operator.times {
-            results = "\(Int(firstValue)! * Int(displayLabel.text!)!)"
+            results = "\(Double(firstValue)! * Double(displayLabel.text!)!)"
         } else if currOperation == Operator.division {
-            results = "\(Int(firstValue)! / Int(displayLabel.text!)!)"
+            results = "\(Double(firstValue)! / Double(displayLabel.text!)!)"
         }
         
         displayLabel.text = results //--Assign results of calculation to displayLabel
@@ -161,7 +161,7 @@ class ViewController: UIViewController {
     
     //--Clear
     @IBAction func ClearClicked(_ sender: UIButton) {
-        displayLabel.text = "0"  //--CLEARS Label
+        displayLabel.text = ""  //--CLEARS Label
         
         //--Animate
         AnimateThis(b: clearBUTT)
@@ -169,20 +169,19 @@ class ViewController: UIViewController {
     
     //------ANIMATION FUNCTION-----------//
     func AnimateThis(b: UIButton){
-        
         UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             
             //--Equal button increase
-            b.bounds.size.width += 10
-            b.bounds.size.height += 10
+            b.bounds.size.width += 12
+            b.bounds.size.height += 12
             
             }, completion: { finished in
                 
                 UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
                     
                     //--Equal button decrease
-                    b.bounds.size.width -= 10
-                    b.bounds.size.height -= 10
+                    b.bounds.size.width -= 12
+                    b.bounds.size.height -= 12
                     
                 }, completion: nil)
         })
@@ -190,7 +189,22 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        AnimateThis(b: clearBUTT)
+        AnimateThis(b: equalBUTT)
+        AnimateThis(b: plusBUTT)
+        AnimateThis(b: minusBUTT)
+        AnimateThis(b: timesBUTT)
+        AnimateThis(b: divideBUTT)
+        AnimateThis(b: oneBUT)
+        AnimateThis(b: twoBUTT)
+        AnimateThis(b: threeBUTT)
+        AnimateThis(b: fourBUTT)
+        AnimateThis(b: fiveBUTT)
+        AnimateThis(b: sixBUTT)
+        AnimateThis(b: sevenBUTT)
+        AnimateThis(b: eightBUTT)
+        AnimateThis(b: nineBUTT)
+        AnimateThis(b: zeroBUTT)
     }
 
 

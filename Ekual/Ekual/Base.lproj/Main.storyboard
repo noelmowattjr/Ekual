@@ -209,8 +209,8 @@
                                     <constraint firstAttribute="height" constant="45" id="PVI-73-WX8"/>
                                     <constraint firstAttribute="width" constant="304" id="VZl-hN-sRN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="41"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                <color key="textColor" red="0.26919317245483398" green="0.48420119285583496" blue="0.61752253770828247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
