@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD010CEC1D97486100641785 /* StructsEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD010CEB1D97486100641785 /* StructsEnums.swift */; };
+		DD5EC92B1DA188BD000FB5FB /* Heartbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC92A1DA188BD000FB5FB /* Heartbeat.mp3 */; };
 		DD9101DF1D9077730044F447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9101DE1D9077730044F447 /* AppDelegate.swift */; };
 		DD9101E11D9077730044F447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9101E01D9077730044F447 /* ViewController.swift */; };
 		DD9101E41D9077730044F447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9101E21D9077730044F447 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		DD010CEB1D97486100641785 /* StructsEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructsEnums.swift; sourceTree = "<group>"; };
+		DD5EC92A1DA188BD000FB5FB /* Heartbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Heartbeat.mp3; sourceTree = "<group>"; };
 		DD9101DB1D9077730044F447 /* Ekual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9101DE1D9077730044F447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9101E01D9077730044F447 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				DDE22C3C1D9C5DC900FC78D3 /* AnimationFile.swift */,
 				DD9101E21D9077730044F447 /* Main.storyboard */,
 				DD9101E51D9077730044F447 /* Assets.xcassets */,
+				DD5EC92A1DA188BD000FB5FB /* Heartbeat.mp3 */,
 				DDB5B75E1D91AEB600B89CCA /* bg2.png */,
 				DD974A791D92BB5D00BC4EAE /* logo.png */,
 				DD9101E71D9077730044F447 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 				DD9101E91D9077730044F447 /* LaunchScreen.storyboard in Resources */,
 				DD974A7A1D92BB5D00BC4EAE /* logo.png in Resources */,
 				DD9101E61D9077730044F447 /* Assets.xcassets in Resources */,
+				DD5EC92B1DA188BD000FB5FB /* Heartbeat.mp3 in Resources */,
 				DDB5B75F1D91AEB600B89CCA /* bg2.png in Resources */,
 				DD9101E41D9077730044F447 /* Main.storyboard in Resources */,
 			);
