@@ -1,0 +1,2 @@
+# Ekual
+A basic calculator
