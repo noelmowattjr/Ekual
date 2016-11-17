@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DD010CEC1D97486100641785 /* StructsEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD010CEB1D97486100641785 /* StructsEnums.swift */; };
-		DD5EC92B1DA188BD000FB5FB /* Heartbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC92A1DA188BD000FB5FB /* Heartbeat.mp3 */; };
 		DD9101DF1D9077730044F447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9101DE1D9077730044F447 /* AppDelegate.swift */; };
 		DD9101E11D9077730044F447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9101E01D9077730044F447 /* ViewController.swift */; };
 		DD9101E41D9077730044F447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9101E21D9077730044F447 /* Main.storyboard */; };
@@ -16,12 +15,10 @@
 		DD9101E91D9077730044F447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9101E71D9077730044F447 /* LaunchScreen.storyboard */; };
 		DD974A7A1D92BB5D00BC4EAE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DD974A791D92BB5D00BC4EAE /* logo.png */; };
 		DDB5B75F1D91AEB600B89CCA /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B75E1D91AEB600B89CCA /* bg2.png */; };
-		DDE22C3D1D9C5DC900FC78D3 /* AnimationFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE22C3C1D9C5DC900FC78D3 /* AnimationFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD010CEB1D97486100641785 /* StructsEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructsEnums.swift; sourceTree = "<group>"; };
-		DD5EC92A1DA188BD000FB5FB /* Heartbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Heartbeat.mp3; sourceTree = "<group>"; };
 		DD9101DB1D9077730044F447 /* Ekual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9101DE1D9077730044F447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9101E01D9077730044F447 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +28,6 @@
 		DD9101EA1D9077730044F447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD974A791D92BB5D00BC4EAE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DDB5B75E1D91AEB600B89CCA /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
-		DDE22C3C1D9C5DC900FC78D3 /* AnimationFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +62,13 @@
 			children = (
 				DD9101DE1D9077730044F447 /* AppDelegate.swift */,
 				DD9101E01D9077730044F447 /* ViewController.swift */,
-				DDE22C3C1D9C5DC900FC78D3 /* AnimationFile.swift */,
+				DD010CEB1D97486100641785 /* StructsEnums.swift */,
 				DD9101E21D9077730044F447 /* Main.storyboard */,
 				DD9101E51D9077730044F447 /* Assets.xcassets */,
-				DD5EC92A1DA188BD000FB5FB /* Heartbeat.mp3 */,
 				DDB5B75E1D91AEB600B89CCA /* bg2.png */,
 				DD974A791D92BB5D00BC4EAE /* logo.png */,
 				DD9101E71D9077730044F447 /* LaunchScreen.storyboard */,
 				DD9101EA1D9077730044F447 /* Info.plist */,
-				DD010CEB1D97486100641785 /* StructsEnums.swift */,
 			);
 			path = Ekual;
 			sourceTree = "<group>";
@@ -142,7 +136,6 @@
 				DD9101E91D9077730044F447 /* LaunchScreen.storyboard in Resources */,
 				DD974A7A1D92BB5D00BC4EAE /* logo.png in Resources */,
 				DD9101E61D9077730044F447 /* Assets.xcassets in Resources */,
-				DD5EC92B1DA188BD000FB5FB /* Heartbeat.mp3 in Resources */,
 				DDB5B75F1D91AEB600B89CCA /* bg2.png in Resources */,
 				DD9101E41D9077730044F447 /* Main.storyboard in Resources */,
 			);
@@ -157,7 +150,6 @@
 			files = (
 				DD010CEC1D97486100641785 /* StructsEnums.swift in Sources */,
 				DD9101E11D9077730044F447 /* ViewController.swift in Sources */,
-				DDE22C3D1D9C5DC900FC78D3 /* AnimationFile.swift in Sources */,
 				DD9101DF1D9077730044F447 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
